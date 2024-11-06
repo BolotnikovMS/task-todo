@@ -5,9 +5,11 @@
 - [Задание](#description)
 - [Установка](#installation)
 
+[Ссылка на GitHub Page](https://bolotnikovms.github.io/task-todo)
+
 ## <a name="description"></a>Задание: [⬆️](#nav)
 
-Реализовать приложение To-do List. (пример приложения в фото ниже)
+Реализовать приложение To-do List. (пример приложения в фото ниже)  
 
 ### Обязательно:
 
