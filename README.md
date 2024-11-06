@@ -1,50 +1,54 @@
-# React + TypeScript + Vite
+# Техническое задание на позицию: Junior Frontend Developer.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## <a name="nav"></a>Навигация:
 
-Currently, two official plugins are available:
+- [Описание](#description)
+- [Установка](#installation)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## <a name="description"></a>Задание: [⬆️](#nav)
 
-## Expanding the ESLint configuration
+Реализовать приложение To-do List. (пример приложения в фото ниже)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Обязательно:
 
-- Configure the top-level `parserOptions` property like this:
+Приложение написано при использовании библиотеки React.
+Реализован функционал:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+1. Добавления задачи ✅
+2. Удаление задачи ✅
+3. Удаление всех задач ✅
+
+## Опционально:
+
+1. Реализовать разделы : 
+- Текущие дела. ✅
+- Все дела. ✅
+- Выполненные дела. ✅
+- Корзина. ✅
+2. Реализовать страницу авторизации c отдельным роутом.
+Если мы уже логинились, то после перезагрузки страницы нас не должно выкидывать на страницу логина.
+	JWT прикручивать не надо.
+	Достаточно сделать проверку на логин: admin и пароль: admin
+3. После перезагрузки страницы данные по делам (задачам) остаются. ✅
+4. Использовать TypeScript. ✅
+5. Использовать Redux-toolkit.
+
+  ![image](https://github.com/user-attachments/assets/2cdc292f-de5e-40d5-90b7-a2a9e403cecb)
+
+
+
+## <a name="installation"></a>Установка: [⬆️](#nav)
+
+1. Склонируйте репозиторий:
 ```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+git clone https://github.com/BolotnikovMS/task-todo.git
+```
+  - При необходимости добавьте в конце `./` чтобы не создавалась дополнительная папка.
+2. Установите зависимости:
+```
+npm install
+```
+3. Запустите приложение:
+ ```
+npm run dev
 ```
